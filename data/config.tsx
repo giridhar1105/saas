@@ -1,39 +1,39 @@
 import { Button } from '@chakra-ui/react'
 import { Link } from '@saas-ui/react'
 import { NextSeoProps } from 'next-seo'
-import { FaGithub, FaTwitter } from 'react-icons/fa'
+import { FaGithub, FaTwitter, FaLinkedin } from 'react-icons/fa'
 import { FiCheck } from 'react-icons/fi'
 import { Logo } from './logo'
 
 const siteConfig = {
   logo: Logo,
   seo: {
-    title: 'Saas UI',
-    description: 'The React component library for startups',
+    title: 'Tech Wizard',
+    description: 'Your go-to solution for modern web applications',
   } as NextSeoProps,
-  termsUrl: '#',
-  privacyUrl: '#',
+  termsUrl: 'https://example.com/terms',
+  privacyUrl: 'https://example.com/privacy',
   header: {
     links: [
       {
-        id: 'features',
-        label: 'Features',
+        id: 'about',
+        label: 'About Us',
       },
       {
-        id: 'pricing',
-        label: 'Pricing',
+        id: 'services',
+        label: 'Services',
       },
       {
-        id: 'faq',
-        label: 'FAQ',
+        id: 'contact',
+        label: 'Contact',
       },
       {
-        label: 'Login',
-        href: '/login',
+        label: 'Sign In',
+        href: '/signin',
       },
       {
-        label: 'Sign Up',
-        href: '/signup',
+        label: 'Join Now',
+        href: '/join',
         variant: 'primary',
       },
     ],
@@ -41,50 +41,54 @@ const siteConfig = {
   footer: {
     copyright: (
       <>
-        Built by{' '}
-        <Link href="https://twitter.com/Pagebakers">Eelco Wiersma</Link>
+        Created with care by{' '}
+        <Link href="https://twitter.com/TechWizardDev">John Doe</Link>
       </>
     ),
     links: [
       {
-        href: 'mailto:hello@saas-ui.dev',
-        label: 'Contact',
+        href: 'mailto:support@techwizard.dev',
+        label: 'Support',
       },
       {
-        href: 'https://twitter.com/saas_js',
+        href: 'https://twitter.com/tech_wizard',
         label: <FaTwitter size="14" />,
       },
       {
-        href: 'https://github.com/saas-js/saas-ui',
+        href: 'https://github.com/techwizard/tech-ui',
         label: <FaGithub size="14" />,
+      },
+      {
+        href: 'https://linkedin.com/company/techwizard',
+        label: <FaLinkedin size="14" />,
       },
     ],
   },
   signup: {
-    title: 'Start building with Saas UI',
+    title: 'Get Started with Tech Wizard',
     features: [
       {
         icon: FiCheck,
-        title: 'Accessible',
-        description: 'All components strictly follow WAI-ARIA standards.',
+        title: 'Modern Design',
+        description: 'Our components are designed with the latest UI trends.',
       },
       {
         icon: FiCheck,
-        title: 'Themable',
+        title: 'Mobile First',
         description:
-          'Fully customize all components to your brand with theme support and style props.',
+          'Responsive and optimized for all devices, from mobile to desktop.',
       },
       {
         icon: FiCheck,
-        title: 'Composable',
+        title: 'Extensible',
         description:
-          'Compose components to fit your needs and mix them together to create new ones.',
+          'Easily extend or override components to suit your project needs.',
       },
       {
         icon: FiCheck,
-        title: 'Productive',
+        title: 'Fast Development',
         description:
-          'Designed to reduce boilerplate and fully typed, build your product at speed.',
+          'Boost your productivity with pre-built components and minimal setup.',
       },
     ],
   },

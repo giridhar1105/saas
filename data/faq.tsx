@@ -1,30 +1,34 @@
 import * as React from 'react'
 
 const faq = {
-  title: 'Frequently asked questions',
-  // description: '',
+  title: 'Frequently Asked Questions',
   items: [
     {
-      q: 'How many products can I use Saas UI Pro for?',
+      q: 'What are the system requirements to use Tech UI?',
       a: (
         <>
-          The single license can be used for one commercial application or SaaS
-          product and unlimited internal tools. You can buy as many licenses as
-          you need. <br /> The unlimited license does not have any restrictions.
+          Tech UI is built to work on modern web browsers. We recommend using the
+          latest versions of Chrome, Firefox, Safari, or Edge for the best
+          experience. It is also fully responsive, so you can access it on any
+          device, including mobile and tablets.
         </>
       ),
     },
     {
-      q: 'Can I use Saas UI Pro for client work?',
-      a: "Yes, that's totally up to you, as long as it fits the license you purchase.",
+      q: 'Is Tech UI compatible with React?',
+      a: "Yes, Tech UI is built with React components and works seamlessly within any React-based project.",
     },
     {
-      q: 'Can I use Saas UI Pro for Open Source projects?',
-      a: 'No currently not. A large part of Saas UI is already released under MIT license. We try to give back to the community as much as possible.',
+      q: 'Can I customize the components in Tech UI?',
+      a: 'Yes, all components in Tech UI are highly customizable with props, styles, and themes. You can adjust them to match your brand identity.',
     },
     {
-      q: 'Does Saas UI include Figma, Sketch or other design files?',
-      a: 'No, Saas UI does not include any design assets. Maintaining design resources costs a lot of extra effort. We believe small teams can move much faster by designing directly in code, with help of Storybooks.',
+      q: 'Is Tech UI open-source?',
+      a: 'Yes, Tech UI offers an open-source version under the MIT License, and we are actively developing new features and enhancements to the library.',
+    },
+    {
+      q: 'Do you offer support for Tech UI?',
+      a: 'We provide community support via GitHub issues and our Discord server. If you need premium support, you can purchase a support plan.',
     },
   ],
 }
