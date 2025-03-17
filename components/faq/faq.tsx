@@ -7,6 +7,7 @@ interface FaqProps extends Omit<SectionProps, 'title' | 'children'> {
   items: { q: React.ReactNode; a: React.ReactNode }[]
 }
 
+
 export const Faq: React.FC<FaqProps> = (props) => {
   const {
     title = 'Frequently asked questions',

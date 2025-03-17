@@ -1,1 +1,2 @@
+//hero
 export * from './hero'
